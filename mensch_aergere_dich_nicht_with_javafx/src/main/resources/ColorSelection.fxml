@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="ColorSelectionAnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.menschaergerdichnicht_gruppewiraergernuns.ColorSelection" opacity="0">
+   <children>
+      <Circle fx:id="yellowButton" fill="#f8f956" radius="35" onMousePressed="#chooseColor" onMouseEntered="#colorButton_hover" onMouseExited="#colorButton_default" layoutX="165" layoutY="200"/>
+      <Circle fx:id="redButton" fill="#da5e5e" radius="35" onMousePressed="#chooseColor" onMouseEntered="#colorButton_hover" onMouseExited="#colorButton_default" layoutX="255" layoutY="200"/>
+      <Circle fx:id="blueButton" fill="#1E90FF" radius="35" onMousePressed="#chooseColor" onMouseEntered="#colorButton_hover" onMouseExited="#colorButton_default" layoutX="345" layoutY="200"/>
+      <Circle fx:id="greenButton" fill="#75c95d" radius="35" onMousePressed="#chooseColor" onMouseEntered="#colorButton_hover" onMouseExited="#colorButton_default" layoutX="435" layoutY="200"/>
+
+      <Label layoutX="211.0" layoutY="102.0" text="Please choose a Color">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentPlayerLabel" alignment="center" text="Player 1" layoutX="250" layoutY="20">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+
+
+      <Group fx:id="twoPlayerIcon" layoutX="4" layoutY="277.5" mouseTransparent="true">
+         <Group layoutX="10" opacity="0">
+            <Circle fill="#3D3D3D" radius="3.3"/>
+            <Ellipse fill="#3D3D3D" radiusX="3.3" radiusY="6.6"  layoutY="9"/>
+         </Group>
+         <Group opacity="0">
+            <Circle fill="#3D3D3D" radius="3.3"/>
+            <Ellipse fill="#3D3D3D" radiusX="3.3" radiusY="6.6"  layoutY="9"/>
+         </Group>
+      </Group>
+
+      <Group fx:id="threePlayerIcon" layoutX="0" layoutY="277.5" mouseTransparent="true">
+         <Group layoutX="20" opacity="0">
+            <Circle fill="#3D3D3D" radius="3.3"/>
+            <Ellipse fill="#3D3D3D" radiusX="3.3" radiusY="6.6" layoutY="9"/>
+         </Group>
+         <Group layoutX="10" opacity="0">
+            <Circle fill="#3D3D3D" radius="3.3"/>
+            <Ellipse fill="#3D3D3D" radiusX="3.3" radiusY="6.6"  layoutY="9"/>
+         </Group>
+         <Group opacity="0">
+            <Circle fill="#3D3D3D" radius="3.3"/>
+            <Ellipse fill="#3D3D3D" radiusX="3.3" radiusY="6.6"  layoutY="9"/>
+         </Group>
+      </Group>
+
+      <Group fx:id="fourPlayerIcon" layoutX="-4" layoutY="277.5" mouseTransparent="true">
+         <Group layoutX="30" opacity="0">
+            <Circle fill="#3D3D3D" radius="3.3"/>
+            <Ellipse fill="#3D3D3D" radiusX="3.3" radiusY="6.6" layoutY="9"/>
+         </Group>
+         <Group layoutX="20" opacity="0">
+            <Circle fill="#3D3D3D" radius="3.3"/>
+            <Ellipse fill="#3D3D3D" radiusX="3.3" radiusY="6.6" layoutY="9"/>
+         </Group>
+         <Group layoutX="10" opacity="0">
+            <Circle fill="#3D3D3D" radius="3.3"/>
+            <Ellipse fill="#3D3D3D" radiusX="3.3" radiusY="6.6"  layoutY="9"/>
+         </Group>
+         <Group opacity="0">
+            <Circle fill="#3D3D3D" radius="3.3"/>
+            <Ellipse fill="#3D3D3D" radiusX="3.3" radiusY="6.6"  layoutY="9"/>
+         </Group>
+      </Group>
+
+      <!-->will increase to width: 155<-->
+      <Rectangle fx:id="colorSetMenu" width="34" height="34" layoutX="23" layoutY="343" fill="#DDDDDD" arcWidth="35" arcHeight="35"/>
+
+
+      <Group fx:id="colorSet1" layoutX="36.35" layoutY="356.35">
+         <Circle radius="3.65" fill="#FF00E5"/>
+         <Circle radius="3.65" fill="#FFB800" layoutX="8.65"/>
+         <Circle radius="3.65" fill="#00D1FF" layoutY="8.65"/>
+         <Circle radius="3.65" fill="#00FF94" layoutX="8.65" layoutY="8.65"/>
+      </Group>
+
+      <Group fx:id="colorSet2" layoutX="36.35" layoutY="356.35">
+         <Circle radius="3.65" fill="#7b6f93"/>
+         <Circle radius="3.65" fill="#e96479" layoutX="8.65"/>
+         <Circle radius="3.65" fill="#f5e9cf" layoutY="8.65"/>
+         <Circle radius="3.65" fill="#7db9b6" layoutX="8.65" layoutY="8.65"/>
+      </Group>
+
+      <Group fx:id="colorSet3" layoutX="36.35" layoutY="356.35">
+         <Circle radius="3.65" fill="#d528ff"/>
+         <Circle radius="3.65" fill="#ff3d72" layoutX="8.65"/>
+         <Circle radius="3.65" fill="#8aff2c" layoutY="8.65"/>
+         <Circle radius="3.65" fill="#3c00ff" layoutX="8.65" layoutY="8.65"/>
+      </Group>
+
+      <Group fx:id="colorSet4" layoutX="36.35" layoutY="356.35">
+         <Circle radius="3.65" fill="#76769f"/>
+         <Circle radius="3.65" fill="#1b9c85" layoutX="8.65"/>
+         <Circle radius="3.65" fill="#d0f6d7" layoutY="8.65"/>
+         <Circle radius="3.65" fill="#FFE194" layoutX="8.65" layoutY="8.65"/>
+      </Group>
+
+      <Circle fx:id="hitbox4" radius="13" layoutX="40" layoutY="360" fill="#DDDDDD" onMousePressed="#applyColor" opacity="0"/>
+      <Circle fx:id="hitbox3" radius="13" layoutX="40" layoutY="360" fill="#DDDDDD" onMousePressed="#applyColor" opacity="0"/>
+      <Circle fx:id="hitbox2" radius="13" layoutX="40" layoutY="360" fill="#DDDDDD" onMousePressed="#applyColor" opacity="0"/>
+      <Circle fx:id="hitbox1" radius="13" layoutX="40" layoutY="360" fill="#DDDDDD" onMousePressed="#applyColor" opacity="0"/>
+
+
+      <Circle fx:id="colorSetButton" radius="17.5" layoutX="40" layoutY="360" fill="#DDDDDD" onMousePressed="#openColorSetMenu"/>
+
+      <Group fx:id="colorSetButtonIcon" mouseTransparent="true" >
+         <Circle radius="5.5" layoutX="40" layoutY="356.75" fill="#ff4929" opacity="0.5"/>
+         <Circle radius="5.5" layoutX="36.75" layoutY="363.25" fill="#21ff00" opacity="0.5"/>
+         <Circle radius="5.5" layoutX="43.25" layoutY="363.25" fill="#006eff" opacity="0.5"/>
+      </Group>
+
+
+
+
+   </children>
+</AnchorPane>

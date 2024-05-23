@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="playerSelectionAnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.menschaergerdichnicht_gruppewiraergernuns.PlayerSelection" opacity="0">
+   <children>
+      <Label fx:id="playerAmountText" text="How many Players want to play?">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+
+
+
+      <Rectangle fx:id="twoPlayerButton" arcHeight="25" arcWidth="25" fill="#D9D9D9" height="25" layoutX="117" layoutY="271" onMouseEntered="#hoveredButtonEffect" onMouseExited="#revertEffect" onMousePressed="#switchToColorSelection" width="109">
+
+      </Rectangle>
+
+      <Rectangle fx:id="threePlayerButton" arcHeight="25" arcWidth="25" fill="#D9D9D9" height="25" layoutX="246" layoutY="271" onMouseEntered="#hoveredButtonEffect" onMouseExited="#revertEffect" onMousePressed="#switchToColorSelection" width="109">
+
+      </Rectangle>
+
+      <Rectangle fx:id="fourPlayerButton" arcHeight="25" arcWidth="25" fill="#D9D9D9" height="25" layoutX="375" layoutY="271" onMouseEntered="#hoveredButtonEffect" onMouseExited="#revertEffect" onMousePressed="#switchToColorSelection" width="109">
+
+      </Rectangle>
+
+
+      <Group fx:id="twoPlayerIcon" layoutX="167" layoutY="277.5" mouseTransparent="true">
+         <Group layoutX="10">
+            <Circle fill="#3D3D3D" radius="3.3" />
+            <Ellipse fill="#3D3D3D" layoutY="9" radiusX="3.3" radiusY="6.6" />
+         </Group>
+
+         <Group>
+            <Circle fill="#3D3D3D" radius="3.3" />
+            <Ellipse fill="#3D3D3D" layoutY="9" radiusX="3.3" radiusY="6.6" />
+         </Group>
+      </Group>
+
+      <Group fx:id="threePlayerIcon" layoutX="290" layoutY="277.5" mouseTransparent="true">
+         <Group layoutX="20">
+            <Circle fill="#3D3D3D" radius="3.3" />
+            <Ellipse fill="#3D3D3D" layoutY="9" radiusX="3.3" radiusY="6.6" />
+         </Group>
+         <Group layoutX="10">
+            <Circle fill="#3D3D3D" radius="3.3" />
+            <Ellipse fill="#3D3D3D" layoutY="9" radiusX="3.3" radiusY="6.6" />
+         </Group>
+         <Group>
+            <Circle fill="#3D3D3D" radius="3.3" />
+            <Ellipse fill="#3D3D3D" layoutY="9" radiusX="3.3" radiusY="6.6" />
+         </Group>
+      </Group>
+
+
+      <Group fx:id="fourPlayerIcon" layoutX="414" layoutY="277.5" mouseTransparent="true">
+         <Group layoutX="30">
+            <Circle fill="#3D3D3D" radius="3.3" />
+            <Ellipse fill="#3D3D3D" layoutY="9" radiusX="3.3" radiusY="6.6" />
+         </Group>
+         <Group layoutX="20">
+            <Circle fill="#3D3D3D" radius="3.3" />
+            <Ellipse fill="#3D3D3D" layoutY="9" radiusX="3.3" radiusY="6.6" />
+         </Group>
+         <Group layoutX="10">
+            <Circle fill="#3D3D3D" radius="3.3" />
+            <Ellipse fill="#3D3D3D" layoutY="9" radiusX="3.3" radiusY="6.6" />
+         </Group>
+         <Group>
+            <Circle fill="#3D3D3D" radius="3.3" />
+            <Ellipse fill="#3D3D3D" layoutY="9" radiusX="3.3" radiusY="6.6" />
+         </Group>
+
+      </Group>
+
+
+   </children>
+</AnchorPane>
